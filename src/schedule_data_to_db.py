@@ -3,6 +3,7 @@ import time
 import datetime
 from db_tools.write_symbol_to_db import write_symbol_to_db
 import ccxt
+from db_tools.read_from_db import read_symbol_from_db
 from voceanemail.send_email import sendEmail
 
 time_now = datetime.datetime.utcnow()
@@ -13,8 +14,13 @@ def job():
         write_symbol_to_db()
         print("Insert date to db by Bing Li and the time is " + str(time_now))
     # return sendEmail(time_now)
-    except ccxt.base.errors.RequestTimeout:
+    except ccxt.base.errors:
         print("Getting data failed, will retry in next minute!")
+
+def watch_mark(mark_price):
+    symbol_df = read_symbol_from_db()
+
+    print(symbol_df)
 
 
 schedule.every().minutes.do(job)
