@@ -42,7 +42,7 @@ def get_symbol_df():
 
     ccxt_client = ccxt.bibox(api)
     symbol = 'BIX/GUSD'
-    interval = '1d'
+    interval = '1m'
 
     symbol_l = ccxt_client.fetch_ohlcv(symbol, interval)
     bibox_index = [
@@ -60,7 +60,7 @@ def get_symbol_df():
     symbol_df = symbol_df.set_index(['date'])
     symbol_df.to_csv('symbol_org.csv')
     df = symbol_df.copy()
-    df = df.rolling(min_periods=1, window=7).mean()
+    df = df.rolling(min_periods=1, window=1).mean()
     df.to_csv('symbol_mean.csv')
     df = df.reset_index()
     print(df)

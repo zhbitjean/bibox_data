@@ -3,7 +3,7 @@ import time
 import datetime
 from db_tools.write_symbol_to_db import write_symbol_to_db
 import ccxt
-from db_tools.read_from_db import read_symbol_from_db
+from jobs.watch_jobs import watch_mark
 from voceanemail.send_email import sendEmail
 
 time_now = datetime.datetime.utcnow()
@@ -17,13 +17,12 @@ def job():
     except ccxt.base.errors:
         print("Getting data failed, will retry in next minute!")
 
-def watch_mark(mark_price):
-    symbol_df = read_symbol_from_db()
 
-    print(symbol_df)
+
 
 
 schedule.every().minutes.do(job)
+schedule.every().minutes.do(watch_mark, 0.35)
 schedule.every().hour.do(job)
 schedule.every().day.at("10:30").do(job)
 
@@ -32,3 +31,6 @@ print("start running...")
 while 1:
     schedule.run_pending()
     time.sleep(1)
+
+# if __name__ == "__main__":
+#     watch_mark(0.35)V

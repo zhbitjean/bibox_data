@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51c9caea-5fea-4ab1-92e0-852557195869" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fetch_data/fetch_trades.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cors_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jobs/watch_jobs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_symbols/bibox_symbols.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_symbols/bibox_symbols.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schedule_data_to_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schedule_data_to_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbol_mean.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/symbol_mean.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/symbol_org.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/symbol_org.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vocean_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vocean_router.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,37 +22,40 @@
     <session id="-1473413843">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="10" />
+          <entry key="csv" value="13" />
           <entry key="main" value="1" />
-          <entry key="py" value="20" />
+          <entry key="py" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="8" />
+          <entry key="CSV" value="11" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="20" />
+          <entry key="Python" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Python Console" value="6" />
           <entry key="dummy" value="89" />
-          <entry key="py" value="7077" />
+          <entry key="py" value="10223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="89" />
-          <entry key="Python" value="7077" />
+          <entry key="Python" value="10229" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -57,13 +63,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bibox_ohlcv_1016_2018.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/vocean_router.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="-118">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
-                <element signature="e#112#131#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1540243397950" expanded="true" signature="655:1093" ph="..." />
+                <marker date="1540243397950" expanded="true" signature="1064:1093" ph="..." />
               </folding>
             </state>
           </provider>
@@ -72,50 +80,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/schedule_data_to_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="237">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1539981398523" expanded="true" signature="577:601" ph="..." />
+                <marker date="1540243364046" expanded="true" signature="498:500" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py">
+        <entry file="file://$PROJECT_DIR$/src/jobs/watch_jobs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/get_symbols/bibox_symbols.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-807">
-              <folding>
-                <element signature="e#112#131#0" expanded="true" />
-                <marker date="1539896817459" expanded="true" signature="714:1649" ph="..." />
-                <marker date="1539896817459" expanded="true" signature="1696:1697" ph="..." />
-                <marker date="1539896817459" expanded="true" signature="1696:1701" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fetch_data/fetch_trades.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -132,41 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/ccxt/bibox.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="296" column="27" selection-start-line="296" selection-start-column="27" selection-end-line="296" selection-end-column="27" />
-              <folding>
-                <element signature="e#895#4674#0" />
-                <element signature="e#4724#6013#0" />
-                <element signature="e#6072#7828#0" />
-                <element signature="e#7885#8138#0" />
-                <element signature="e#8203#8455#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/ccxt/base/exchange.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="1327" column="8" selection-start-line="1327" selection-start-column="8" selection-end-line="1327" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fetch_data/trades.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -177,6 +121,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fetch_ohlcv</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -199,12 +146,14 @@
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py" />
         <option value="$PROJECT_DIR$/src/db_tools/read_from_db.py" />
-        <option value="$PROJECT_DIR$/src/vocean_router.py" />
-        <option value="$PROJECT_DIR$/src/get_symbols/bibox_symbols.py" />
         <option value="$PROJECT_DIR$/src/fetch_data/fetch_data.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/fetch_data/fetch_trades.py" />
+        <option value="$PROJECT_DIR$/src/get_symbols/bibox_symbols.py" />
+        <option value="$PROJECT_DIR$/src/cors_router.py" />
+        <option value="$PROJECT_DIR$/src/jobs/watch_jobs.py" />
         <option value="$PROJECT_DIR$/src/schedule_data_to_db.py" />
+        <option value="$PROJECT_DIR$/src/vocean_router.py" />
       </list>
     </option>
   </component>
@@ -215,10 +164,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="76" />
-    <option name="y" value="41" />
-    <option name="width" value="1263" />
-    <option name="height" value="785" />
+    <option name="x" value="103" />
+    <option name="y" value="96" />
+    <option name="width" value="1177" />
+    <option name="height" value="635" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -243,6 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,36 +204,18 @@
             <path>
               <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
               <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="voceanemail" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539981094472" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540243167764" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -311,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.fetch_trades">
+  <component name="RunManager" selected="Python.main">
     <configuration name="bibox_ohlcv_1016_2018" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bibox_data" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -427,9 +360,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.fetch_trades" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.vocean_router" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.fetch_trades" />
         <item itemvalue="Python.mysql_utils" />
         <item itemvalue="Python.bibox_ohlcv_1016_2018" />
       </list>
@@ -454,28 +387,29 @@
     <option name="totallyTimeSpent" value="736000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="76" y="41" width="1263" height="785" extended-state="0" />
+    <frame x="103" y="96" width="1177" height="635" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7752577" visible="true" weight="0.27764127" />
-      <window_info id="Structure" order="1" sideWeight="0.22474226" side_tool="true" visible="true" weight="0.27764127" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7669173" visible="true" weight="0.30748898" />
+      <window_info id="Structure" order="1" sideWeight="0.23308271" side_tool="true" visible="true" weight="0.30748898" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.328594" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3001443" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968404" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" order="0" />
+      <window_info anchor="bottom" id="Messages" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.328594" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.26519337" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.3982684" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -487,36 +421,6 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27436528" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.328594" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -527,16 +431,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main" />
     <entry file="file://$PROJECT_DIR$/src/bix_eth_mean.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bix_eth_org.csv">
+      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/voceanemail/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -545,9 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#49#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,51 +459,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/schedule/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="1697">
+          <caret line="373" column="8" selection-start-line="373" selection-start-column="8" selection-end-line="373" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vocean_router.py">
+    <entry file="file://$PROJECT_DIR$/src/get_symbols/bibox_symbols.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        <state relative-caret-position="930">
+          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py">
+    <entry file="file://$PROJECT_DIR$/src/fetch_data/fetch_trades.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="195">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fetch_data/trades.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_symbols/bibox_symbols.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <folding>
-            <element signature="e#112#131#0" expanded="true" />
-            <marker date="1539896817459" expanded="true" signature="714:1649" ph="..." />
-            <marker date="1539896817459" expanded="true" signature="1696:1697" ph="..." />
-            <marker date="1539896817459" expanded="true" signature="1696:1701" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/ccxt/bibox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="1605">
           <caret line="296" column="27" selection-start-line="296" selection-start-column="27" selection-end-line="296" selection-end-column="27" />
           <folding>
             <element signature="e#895#4674#0" />
@@ -616,10 +502,47 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/ccxt/base/exchange.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="19725">
           <caret line="1327" column="8" selection-start-line="1327" selection-start-column="8" selection-end-line="1327" selection-end-column="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fetch_data/trades.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bibox_ohlcv_1016_2018.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#112#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cors_router.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/symbol_mean.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/symbol_org.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db_tools/read_from_db.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -631,33 +554,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bibox_ohlcv_1016_2018.py">
+    <entry file="file://$PROJECT_DIR$/src/jobs/watch_jobs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#112#131#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/schedule_data_to_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="237">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1539981398523" expanded="true" signature="577:601" ph="..." />
+            <marker date="1540243364046" expanded="true" signature="498:500" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fetch_data/fetch_trades.py">
+    <entry file="file://$PROJECT_DIR$/src/vocean_router.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="-118">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1540243397950" expanded="true" signature="655:1093" ph="..." />
+            <marker date="1540243397950" expanded="true" signature="1064:1093" ph="..." />
           </folding>
         </state>
       </provider>
