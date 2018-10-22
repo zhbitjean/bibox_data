@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51c9caea-5fea-4ab1-92e0-852557195869" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cors_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jobs/watch_jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_symbols/bibox_symbols.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_symbols/bibox_symbols.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schedule_data_to_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schedule_data_to_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/symbol_mean.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/symbol_mean.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/symbol_org.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/symbol_org.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vocean_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vocean_router.py" afterDir="false" />
-    </list>
+    <list default="true" id="51c9caea-5fea-4ab1-92e0-852557195869" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540243167764" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540243431172" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -388,9 +379,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="96" width="1177" height="635" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7669173" visible="true" weight="0.30748898" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7669173" visible="true" weight="0.30748898" />
       <window_info id="Structure" order="1" sideWeight="0.23308271" side_tool="true" visible="true" weight="0.30748898" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -401,7 +391,7 @@
       <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.328594" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.26519337" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.26519337" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.3982684" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
