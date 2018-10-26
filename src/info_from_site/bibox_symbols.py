@@ -7,8 +7,7 @@ Created on Tue Oct 16 11:25:34 2018
 """
 import pandas as pd
 import ccxt
-import numpy as np
-
+import logging
 
 
 def parsing_list(list_):
@@ -56,18 +55,13 @@ def get_symbol_df():
     symbol_df = pd.DataFrame(symbol_l, columns=bibox_index)
 
     symbol_df['date'] = symbol_df['date'].astype('datetime64[ms]')
-    symbol_df['mean_volume'] = symbol_df['Volume']
+    symbol_df['Close'] = symbol_df['Close'].astype('float64')
+    symbol_df = symbol_df.sort_values(by=['date'], ascending=False)
     symbol_df = symbol_df.set_index(['date'])
-    symbol_df.to_csv('symbol_org.csv')
+    symbol_df.to_csv('./symbol_org.csv')
     df = symbol_df.copy()
-    df = df.rolling(min_periods=1, window=1).mean()
-    df.to_csv('symbol_mean.csv')
+    # df = df.rolling(min_periods=1, window=1).mean()
+    df.to_csv('./symbol_mean.csv')
     df = df.reset_index()
-    print(df)
+    logging.info(df)
     return df
-
-
-def get_symbol_json():
-    df = get_symbol_df()
-    print(df.to_json())
-    return df.to_json()

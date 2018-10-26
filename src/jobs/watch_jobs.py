@@ -8,8 +8,8 @@ def watch_mark(mark_price):
     latest_time = symbol_df.index.max()
     latest_record = symbol_df.loc[latest_time, 'Close']
     last_df = symbol_df.tail(2)
-    t = last_df.iloc[-1]
-    r = (last_df.iloc[-1]['Close'] - last_df.iloc[0]['Close']) / last_df.iloc[-1]['Close']
+    t = last_df.iloc[1]
+    r = (last_df.iloc[1]['Close'] - last_df.iloc[0]['Close']) / last_df.iloc[1]['Close']
     print(f"Recent price has a {r}% change.")
     if abs(r) > 0.3:
         print(f"Recent price has a {r}% change.")
@@ -19,4 +19,5 @@ def watch_mark(mark_price):
     res_dict['ratio'] = r
     res_dict['mark_price'] = mark_price
     res_dict['latest_price'] = latest_record
+
     return res_dict
