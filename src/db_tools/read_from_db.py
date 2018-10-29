@@ -12,6 +12,14 @@ def read_symbol_from_db():
     return df
 
 
+def read_df_from_db(table_name, conn):
+    df = pd.read_sql_table(
+        table_name,
+        con=conn,
+    )
+    return df
+
+
 if __name__ == "__main__":
     df = read_symbol_from_db()
     plot_df = df.set_index(['date'])
