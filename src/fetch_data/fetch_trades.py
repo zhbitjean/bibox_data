@@ -2,7 +2,7 @@ import ccxt
 import pandas as pd
 import datetime
 import time
-from config import LogInfo
+from config import DBInfo
 from db_tools.write_symbol_to_db import write_symbol_to_db
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -10,7 +10,7 @@ from db_tools.read_from_db import read_df_from_db
 
 
 def get_trade_df(symbol='BIX/USDT'):
-    api = LogInfo.api
+    api = DBInfo.api
     ccxt_client = ccxt.bibox(api)
     # api only give 200 records from current time
     trade_data = ccxt_client.fetch_trades(symbol)
