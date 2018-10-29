@@ -22,7 +22,7 @@ def trade_job():
         print(db_latest_id)
         df_to_db(new_df, table_name, LogInfo.conn)
         print(f"Insert {table_name} to db by Bing Li and the time is {str(time_now)}")
-    except ccxt.base.errors.RequestTimeout:
+    except :
         print("Getting data failed, will retry in next minute!")
 
 
