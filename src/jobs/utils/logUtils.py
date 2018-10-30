@@ -11,18 +11,15 @@ class LogInfo(Base):
     __tablename__ = 'log_info'
     id = Column(BigInteger, primary_key=True, autoincrement=True)
     log_time = Column(DateTime, nullable=False)
+    symbol = Column(String(200), nullable=False)
     start_time = Column(DateTime, nullable=True)
     end_time = Column(DateTime, nullable=True)
     start_id = Column(BigInteger, nullable=True)
     end_id = Column(BigInteger, nullable=True)
-    overlap_count = Column(Integer, nullable=True)
+    new_record_count = Column(Integer, nullable=True)
     message = Column(String(200), nullable=False)
 
-
-    def add_new_log(self, conn
-                    # , log_time, start_time, end_time,
-                    # start_id, end_id, overlap_count, message
-                    ):
+    def add_new_log(self, conn):
         e = conn
         Base.metadata.create_all(e)
         s = Session(e)
@@ -44,5 +41,4 @@ if __name__ == "__main__":
                            end_id=111,
                            overlap_count=23,
                            message=msg)
-    # add_new_log(DBInfo.conn, time_now, time_now, time_now, 110, 111, 23, msg)
     updateRecord.add_new_log(DBInfo.conn)

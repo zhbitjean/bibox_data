@@ -21,8 +21,12 @@ def get_trade_df(symbol='BIX/USDT'):
 
 
 def get_latest_trade_from_db(table_name, conn):
+    sql_db = pd.io.sql.SQLDatabase(conn)
     query = f"SELECT * FROM {table_name} WHERE id IN (SELECT MAX(id) FROM {table_name})"
-    obj = pd.read_sql(query, conn)
+    if not sql_db.has_table(table_name):
+        return None
+    else:
+        obj = pd.read_sql(query, conn)
     return obj
 
 

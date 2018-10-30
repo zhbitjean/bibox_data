@@ -21,28 +21,27 @@ def job_detail():
     start_id = int(df['id'][0])
     end_id = int(list(df['id'])[-1])
     last = get_latest_trade_from_db(table_name, DBInfo.conn)
-    db_latest_id = last["id"][0]
-    new_df = df[df['id'] > int(db_latest_id)]
-    new_record_count = len(new_df)
+    if last is not None:
+        db_latest_id = last["id"][0]
+        new_df = df[df['id'] > int(db_latest_id)]
+        new_record_count = len(new_df)
+    else:
+        db_latest_id = None
+        new_df = df
+        new_record_count = len(df)
     print(new_record_count)
     print(db_latest_id)
     df_to_db(new_df, table_name, DBInfo.conn)
     print(time_now)
-    msg = f"Insert {table_name} to db by Bing Li and the time is {str(time_now)}."
+    msg = f"Insert {new_record_count} new records to table {table_name} by Bing Li and the time is {str(time_now)}."
     updateRecord = LogInfo(log_time=time_now,
+                           symbol=symbol,
                            start_time=start_time,
                            end_time=end_time,
                            start_id=start_id,
                            end_id=end_id,
                            new_record_count=new_record_count,
                            message=msg)
-    # add_new_log(DBInfo.conn, time_now, time_now, time_now, 110, 111, 23, msg)
-    print(type(time_now))
-    print(type(start_time))
-    print(type(end_time))
-    print(type(start_id))
-    print(type(end_time))
-    print(type(new_record_count))
     updateRecord.add_new_log(DBInfo.conn)
     print(msg)
 

@@ -33,7 +33,7 @@
         <counts>
           <entry key="csv" value="19" />
           <entry key="main" value="1" />
-          <entry key="py" value="125" />
+          <entry key="py" value="132" />
           <entry key="pyi" value="1" />
         </counts>
       </usages-collector>
@@ -41,7 +41,7 @@
         <counts>
           <entry key="CSV" value="17" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="125" />
+          <entry key="Python" value="132" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
@@ -49,13 +49,13 @@
         <counts>
           <entry key="Python Console" value="111" />
           <entry key="dummy" value="109" />
-          <entry key="py" value="25380" />
+          <entry key="py" value="25848" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="109" />
-          <entry key="Python" value="25491" />
+          <entry key="Python" value="25959" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -63,22 +63,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/schedule_trade.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fetch_data/fetch_trades.py">
+        <entry file="file://$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="45">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,10 +87,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jobs/trade_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+            <state relative-caret-position="507">
+              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jobs/utils/logUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,12 +155,12 @@
         <option value="$PROJECT_DIR$/src/voceanemail/schedule_trade.py" />
         <option value="$PROJECT_DIR$/src/db_tools/read_from_db.py" />
         <option value="$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py" />
-        <option value="$PROJECT_DIR$/src/fetch_data/fetch_trades.py" />
         <option value="$PROJECT_DIR$/src/schedule_watch.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/jobs/utils/log_to_db.py" />
-        <option value="$PROJECT_DIR$/src/jobs/utils/logUtils.py" />
+        <option value="$PROJECT_DIR$/src/fetch_data/fetch_trades.py" />
         <option value="$PROJECT_DIR$/src/jobs/trade_data.py" />
+        <option value="$PROJECT_DIR$/src/jobs/utils/logUtils.py" />
       </list>
     </option>
   </component>
@@ -157,6 +169,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
@@ -204,7 +222,32 @@
               <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
               <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="db_tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="db_tools" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fetch_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="info_from_site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bibox_data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bibox_data" type="b2602c69:ProjectViewProjectNode" />
@@ -226,7 +269,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540850545408" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540914335156" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -256,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.schedule_trade">
+  <component name="RunManager" selected="Python.trade_data">
     <configuration name="fetch_trades" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bibox_data" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -371,8 +414,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.schedule_trade" />
         <item itemvalue="Python.trade_data" />
+        <item itemvalue="Python.schedule_trade" />
         <item itemvalue="Python.log_to_db" />
         <item itemvalue="Python.schedule_data_to_db" />
         <item itemvalue="Python.fetch_trades" />
@@ -399,9 +442,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="87" width="1353" height="729" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75842696" visible="true" weight="0.27078566" />
-      <window_info id="Structure" order="1" sideWeight="0.24157304" side_tool="true" visible="true" weight="0.27078566" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7564767" visible="true" weight="0.27078566" />
+      <window_info id="Structure" order="1" sideWeight="0.24352331" side_tool="true" visible="true" weight="0.27078566" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -411,8 +455,8 @@
       <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32810047" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.39403453" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.4411303" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.39403453" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4411303" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -421,7 +465,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24942791" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -429,7 +473,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32951945" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,13 +531,6 @@
     <entry file="file://$PROJECT_DIR$/src/db_tools/symbol_mean.csv">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db_tools/utils/pd_formatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/symbol_org.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
@@ -553,13 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="2126" column="8" selection-start-line="2126" selection-start-column="8" selection-end-line="2126" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="2035" column="9" lean-forward="true" selection-start-line="2035" selection-start-column="9" selection-end-line="2035" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -625,23 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/info_from_site/bibox_symbols.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jobs/watch_jobs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -656,36 +669,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db_tools/read_from_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pymysql/converters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jobs/utils/logUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jobs/fetch_symbol_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/schedule_data_to_db.py">
@@ -708,20 +696,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fetch_data/fetch_trades.py">
+    <entry file="file://$PROJECT_DIR$/src/db_tools/utils/pd_formatter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db_tools/read_from_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jobs/trade_data.py">
+    <entry file="file://$PROJECT_DIR$/src/info_from_site/bibox_symbols.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        <state relative-caret-position="84">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#112#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jobs/fetch_symbol_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -731,7 +735,54 @@
     <entry file="file://$PROJECT_DIR$/src/schedule_trade.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="1573" selection-start-line="1573" selection-end-line="1573" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fetch_data/fetch_trades.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db_tools/write_symbol_to_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jobs/trade_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jobs/utils/logUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
