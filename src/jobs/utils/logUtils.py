@@ -17,6 +17,7 @@ class LogInfo(Base):
     start_id = Column(BigInteger, nullable=True)
     end_id = Column(BigInteger, nullable=True)
     new_record_count = Column(Integer, nullable=True)
+    overlap_count = Column(Integer, nullable=True)
     message = Column(String(200), nullable=False)
 
     def add_new_log(self, conn):
@@ -27,7 +28,6 @@ class LogInfo(Base):
         s.add(self)
         s.flush()
         s.commit()
-        print(self.id)
 
 
 if __name__ == "__main__":
