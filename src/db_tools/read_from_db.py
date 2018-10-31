@@ -20,7 +20,7 @@ def read_df_from_db(table_name, conn):
     return df
 
 
-def get_latest_trade_from_db(table_name, conn):
+def get_latest_record_from_db(table_name, conn):
     sql_db = pd.io.sql.SQLDatabase(conn)
     query = f"SELECT * FROM {table_name} WHERE id IN (SELECT MAX(id) FROM {table_name})"
     if not sql_db.has_table(table_name):
