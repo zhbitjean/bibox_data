@@ -49,13 +49,13 @@
         <counts>
           <entry key="Python Console" value="201" />
           <entry key="dummy" value="109" />
-          <entry key="py" value="30997" />
+          <entry key="py" value="31418" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="109" />
-          <entry key="Python" value="31198" />
+          <entry key="Python" value="31619" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -66,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/db_tools/read_from_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="130">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -114,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/v_router.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="66" column="36" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="37" />
+            <state relative-caret-position="120">
+              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -185,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/info_from_site/bibox_symbols.py" />
         <option value="$PROJECT_DIR$/src/jobs/watch_jobs.py" />
         <option value="$PROJECT_DIR$/src/jobs/fetch_symbol_data.py" />
-        <option value="$PROJECT_DIR$/src/v_router.py" />
         <option value="$PROJECT_DIR$/src/jobs/trade_data_job.py" />
         <option value="$PROJECT_DIR$/src/schedule_data_to_db.py" />
         <option value="$PROJECT_DIR$/src/voceanemail/schedule_trade.py" />
@@ -198,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/jobs/trade_data.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/schedule_trade.py" />
+        <option value="$PROJECT_DIR$/src/v_router.py" />
       </list>
     </option>
   </component>
@@ -299,7 +299,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541192970230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541194090921" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -779,16 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db_tools/read_from_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jobs/trade_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -819,6 +809,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/db_tools/read_from_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -828,8 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/v_router.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="66" column="36" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="37" />
+        <state relative-caret-position="120">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>

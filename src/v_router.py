@@ -2,9 +2,10 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 from flask import jsonify
 import json
-from db_tools.read_from_db import read_symbol_from_db
+from db_tools.read_from_db import read_symbol_from_db, read_df_from_db
 from flask_cors import CORS, cross_origin
 from jobs.watch_jobs import watch_mark
+from config import DBInfo
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -53,9 +54,22 @@ class SymbolForChart(Resource):
         return result
 
 
+class SymbolTrade(Resource):
+    def get(self):
+        df = read_df_from_db("bibox_trade", DBInfo.conn)
+        # df['date'] = df['date'].astype('datetime64[ms]')
+        df_string = df.to_json()
+        df_json = json.loads(df_string)
+        result = jsonify({
+            "data": df_json,
+        })
+        return result
+
+
 api.add_resource(HelloWorld, '/')
 api.add_resource(SymbolList, '/symbol_list')
 api.add_resource(SymbolForChart, '/symbol_chart')
+api.add_resource(SymbolTrade, '/symbol_trade')
 
 
 @app.route('/test', methods=['GET'])
