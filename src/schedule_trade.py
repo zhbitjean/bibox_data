@@ -4,7 +4,7 @@ import schedule
 
 from jobs.trade_data import trade_job
 
-schedule.every(10).minutes.do(trade_job)
+schedule.every(5).minutes.do(trade_job)
 
 print("Start downloading trade data from Bibox API ...")
 
