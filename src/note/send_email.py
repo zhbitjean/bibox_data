@@ -1,22 +1,17 @@
 import smtplib
 from email.message import EmailMessage
-import os
 
 
-def sendEmail(time):
+def sendEmail(time, msg_text=None):
     gmail_user = 'zhbitjean@gmail.com'
     gmail_password = "myGoogle_881"
-    send_from = '<zhbitjean@gmail.com>'
-    to = ['<zhbitjean@gmail.com>', '<xhq422986742@gmail.com>']
+    send_from = 'zhbitjean@gmail.com'
+    to = ['zhbitjean@gmail.com', 'xhq422986742@gmail.com']
     subject = "Test email notification."
     msg = EmailMessage()
-    msg.set_content(f"Testing email notification from Bing Li and the time is {time}")
-    # msg = f"""
-    # From: {send_from}\n
-    # To: {to}\n
-    # Subject: {subject}\n
-    #
-    # Testing email notification from Bing Li and the time is {time}"""
+    if msg_text is None:
+        msg_text = f"Testing email notification from Bing Li and the time is {time}. "
+    msg.set_content(msg_text)
     msg['Subject'] = subject
     msg['From'] = send_from
     msg['To'] = to
@@ -25,7 +20,6 @@ def sendEmail(time):
     s.starttls()
     s.login(gmail_user, gmail_password)
     s.ehlo()
-    # s.sendmail(send_from, to, msg)
     s.send_message(msg)
     s.close()
     print("Email sent")

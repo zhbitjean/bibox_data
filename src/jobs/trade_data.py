@@ -1,5 +1,5 @@
 import datetime
-import logging
+from note.send_email import sendEmail
 
 import ccxt
 from config import DBInfo
@@ -10,7 +10,7 @@ from jobs.utils.logUtils import LogInfo
 
 
 def job_detail():
-    time_now = datetime.datetime.utcnow()
+    time_now = datetime.datetime.now()
     symbol = 'BIX/USDT'
     table_name = 'bibox_trade'
     symbol_name = symbol.lower().replace('/', '_')
@@ -42,12 +42,13 @@ def job_detail():
     else:
         new_df = df
         new_record_count = len(df)
-        # last_end_id = last_trade["id"][0]
         overlap_count = 0
         overlap_msg = ""
     df_to_db(new_df, table_name, DBInfo.conn)
     msg = f"Insert {new_record_count} new records to table {table_name} " \
           f"by Bing Li and the time is {str(time_now)}. {overlap_msg}"
+    if overlap_count <= 0:
+        sendEmail(str(time_now), msg_text=msg)
     updateRecord = LogInfo(log_time=time_now,
                            symbol=symbol,
                            start_time=start_time,
