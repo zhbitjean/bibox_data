@@ -7,7 +7,7 @@ from flask_cors import CORS, cross_origin
 from jobs.watch_jobs import watch_mark
 from config import DBInfo
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 api = Api(app)
