@@ -38,7 +38,7 @@ def job_detail():
             overlap_msg = f"Getting {overlap_count} overlap records."
         else:
             overlap_msg = f"There might be a gap of {gap_id_count} ids missing. " \
-                          f"Last end id is {last_end_id} min id from API is {start_id}."
+                          f"Latest id is {last_end_id} oldest id from API is {start_id}."
     else:
         new_df = df
         new_record_count = len(df)
