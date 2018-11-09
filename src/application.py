@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 from flask import jsonify
 import json
-from db_tools.read_from_db import read_symbol_from_db, read_df_from_db
+from db_tools.read_from_db import read_symbol_from_db, get_recent_records
 from flask_cors import CORS, cross_origin
 from jobs.watch_jobs import watch_mark
 from config import DBInfo
@@ -56,8 +56,7 @@ class SymbolForChart(Resource):
 
 class SymbolTrade(Resource):
     def get(self):
-        df = read_df_from_db("bibox_trade", DBInfo.conn)
-        # df['date'] = df['date'].astype('datetime64[ms]')
+        df = get_recent_records("bibox_trade", DBInfo.conn, limit=1000)
         df_string = df.to_json()
         df_json = json.loads(df_string)
         result = jsonify({
